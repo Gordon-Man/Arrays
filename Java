@@ -1,0 +1,38 @@
+
+______________________________________________________________________________________________________________________________
+
+
+Initializing an array of a specific size:
+
+      int arr[] = new int[size_variable];
+      
+______________________________________________________________________________________________________________________________
+     
+     
+Filling an array of any size to all to a specific value:
+//This example sets everything to zero inside our array variable
+   
+      Arrays.fill(array_variable, 0);
+      
+______________________________________________________________________________________________________________________________
+
+
+Print out an array:
+
+      System.out.println(Arrays.toString(array_variable));
+      
+______________________________________________________________________________________________________________________________
+
+
+Given an integer array, check if any element has a value of zero, if so, function will return true.
+
+public boolean zero_exist(int array[])
+{
+      boolean flag = false;
+
+      for (int x: array)
+          if (x == 0)
+              flag = true;
+
+      return flag;
+}
